@@ -89,7 +89,27 @@ const TESSELLATIONS: Record<string, Tessellation> = {
       numUnits: 10,
     },
     translationsY: {
-      translation: { x: 50, y: 100, angle: 0 },
+      translation: { x: 0, y: 100, angle: 0 },
+      numUnits: 10,
+    },
+  },
+  HEXAGONS: {
+    unit: [
+      [
+        { x: -100, y: 0 },
+        { x: -50, y: -50 * sqrt(3) },
+        { x: 50, y: -50 * sqrt(3) },
+        { x: 100, y: 0 },
+        { x: -50, y: 50 * sqrt(3) },
+        { x: 50, y: 50 * sqrt(3) },
+      ]
+    ],
+    translationsX: {
+      translation: { x: 150, y: 50*sqrt(3), angle: 0 },
+      numUnits: 10,
+    },
+    translationsY: {
+      translation: { x: 0, y: 100*sqrt(3), angle: 0 },
       numUnits: 10,
     },
   }
